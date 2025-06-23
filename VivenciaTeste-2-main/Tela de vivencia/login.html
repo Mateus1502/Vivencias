@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Amorabi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #BF7AB4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fdfdfd;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      width: 320px;
+    }
+
+    h2 {
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #b37b56;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #945d3d;
+    }
+
+    .link {
+      margin-top: 15px;
+      display: block;
+      color: #BF7AB4;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Amorabi em Movimento</h2>
+    <p>Oficinas que transformam</p>
+    <input type="email" placeholder="Digite seu e-mail">
+    <input type="password" placeholder="Senha">
+    <button onclick="entrar()">Entrar</button>
+    <a class="link" href="cadastro.html">Não tem conta? Cadastre-se</a>
+  </div>
+
+  <script>
+    function entrar() {
+      window.location.href = 'oficinas.html';
+    }
+  </script>
+</body>
+</html>

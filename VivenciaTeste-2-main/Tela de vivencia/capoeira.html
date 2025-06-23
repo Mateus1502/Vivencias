@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição - Capoeira</title>
+  <style>
+    /* Mesma estilização aplicada nas outras */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #BF7AB4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.97);
+      padding: 40px;
+      border-radius: 25px;
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      gap: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      flex-wrap: wrap;
+    }
+    .img {
+      flex: 1 1 300px;
+    }
+    .img img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .form {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .form h2 {
+      margin-bottom: 20px;
+      color: #444;
+      text-align: center;
+    }
+    .form p {
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      color: #555;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #b37b56;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #945d3d;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img">
+      <img src="imagens/capoeira.jpg" alt="Teatro">
+    </div>
+    <div class="form">
+      <h2>Inscrição – Teatro e Expressão</h2>
+      <p>Uma oficina que mistura esporte, cultura e música. Aprimore sua coordenação, disciplina e força com os fundamentos da capoeira.</p>      <label><input type="checkbox"> Desejo me inscrever nesta oficina</label>
+      <label><input type="checkbox"> Desejo receber notificações por e-mail</label>
+      <button class="btn">Confirmar Inscrição</button>
+    </div>
+  </div>
+</body>
+</html>
